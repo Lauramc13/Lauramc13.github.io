@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Pagina personal de Laura Morales" />
+        <meta name="author" content="Laura Morales Caro" />
+        <title>Laura Morales</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/curly-wing_39243.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap) and normalize CSS-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <!-- AOS animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        
+
+        <!-- Charts.css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!-- Recursos utilizados
+        Imagen banner: https://unsplash.com/es/fotos/9miBf7fe1b0
+        Tipografia Remboy: https://fontesk.com/remboy-font/
+        Template de la pagina: https://coolors.co/fdf5ec-bdc0ab-7d8a69-758a59-4e5c4d-2e3538-1c2022
+        Paleta de colores: https://coolors.co/fdf5ec-bdc0ab-7d8a69-758a59-4e5c4d-2e3538-1c2022   -->
+    </head>
+
+    <body id="page-top">
+        <div class="curzr" hidden></div>
+        <!-- Navegacion-->
+         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand"  href="#page-top">Laura Morales</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="#sobreMi">Sobre mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Cabecera-->
+        <header class="masthead" id="header">
+            <img id="img1" class="background" background-image src="/assets/img/fondo4.jpg"/> 
+            <img id="img2" class="background" background-image src="/assets/img/fondo4Movil.jpg"/> 
+            <div class="container">
+                <div class="row">
+                    <div class="mb-5 mb-lg-0 text-center" data-aos="fade-down" data-aos-duration="1000">
+                        <h1 id="titulo">LAURA MORALES</h1>
+                        <p id="subtitulo">ESTUDIANTE DE INGENIERIA INFORMATICA</p>
+                        <br>                              
+                    </div>     
+                </div>
+            </div>                    
+        </header>
+
+        <!-- Sobre mi-->
+        <section class="page-section bg-primary" id="sobreMi">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center" id="contenedorSobreMi">
+                        <h2>SOBRE MI</h2>
+                        <br>
+                        <div class="container-img">
+                            <img id="fotoPerfil" src="/assets/img/fotoPerfil.png"/> 
+                        </div>
+                        <br>
+                        <br>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <h5>Hola! Soy <span>Laura</span>, como ya has visto en el título de la página ;)
+                            <br><br> Soy estudiante de ingenería informática apasionada con el <span>diseño UX/UI, el desarrollo frontend, desarrollo webflow</span>, y muchas cosas más.
+                            <br> <br> Soy una persona muy curiosa que siempre esta buscando nuevas formas para mejorar lo que hace. Disfruto la resolución de problemas complejos y la tutoría y opiniones de otros.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section" id="skills">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-9 text-center">
+                        <h2>HABILIDADES</h2>
+                        <br>
+                        <br>
+                       <div class="row">
+                            <div class="col"  data-aos="fade-right" data-aos-duration="1500">
+                                <h5>Diseño UI/UX</h5>
+                                <table id="my-chart" class="charts-css bar [ show-labels show-primary-axis show-4-secondary-axes ] show-data-on-hover [ data-spacing-5 ]" style="height: 300px;">
+                                    <tbody>
+                                        <tr> 
+                                            <th> HTML </th>
+                                            <td style="--size: 0.9;"> <span class="data">90</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> CSS </th>
+                                            <td style="--size: 0.9;"> <span class="data">90</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Prototipado </th>
+                                            <td style="--size: 0.9;"> <span class="data">90</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Bootstrap </th>
+                                            <td style="--size: 0.8;"> <span class="data">80</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Angular </th>
+                                            <td style="--size: 0.8;"> <span class="data">80</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Vue.js </th>
+                                            <td style="--size: 0.75;"> <span class="data">70</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> JavaScript </th>
+                                            <td style="--size: 0.7;"> <span class="data">70</span></td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="col" id="skills" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="150">
+                                <h5>Conocimientos técnicos</h5>
+                                <table id="my-chart" class="charts-css bar [ show-labels show-primary-axis show-4-secondary-axes ] show-data-on-hover [ data-spacing-5 ]" style="height: 300px;">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"> WPF </th>
+                                            <td style="--size: 0.85;"> <span class="data">85</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> UWP </th>
+                                            <td style="--size: 0.85;"> <span class="data">85</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> XML </th>
+                                            <td style="--size: 0.85;"> <span class="data">85</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Git </th>
+                                            <td style="--size: 0.8;"> <span class="data">80</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Python </th>
+                                            <td style="--size: 0.7;"> <span class="data">70</span></td>
+                                        </tr>
+                                        <tr> 
+                                            <th> Java </th>
+                                            <td style="--size: 0.7;"> <span class="data">70</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row"> SQL </th>
+                                            <td style="--size: 0.7;"> <span class="data">70</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> C# </th>
+                                            <td style="--size: 0.6;"> <span class="data">60</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col" id="skills" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                                <h5>Softskills</h5>
+                                <table id="my-chart" class="charts-css bar [ show-labels show-primary-axis show-4-secondary-axes ] show-data-on-hover [ data-spacing-5 ]" style="height: 300px;">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"> Creatividad </th>
+                                            <td style="--size: 0.95;"> <span class="data">95</span></td>
+                                        </tr>
+                                        <tr> 
+                                            <th> Colaboracion</th>
+                                            <td style="--size: 0.9;"> <span class="data">90</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Gestión del tiempo</th>
+                                            <td style="--size: 0.85;"> <span class="data">85</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Comunicación </th>
+                                            <td style="--size: 0.8;"> <span class="data">80</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Aprender rápido </th>
+                                            <td style="--size: 0.8;"> <span class="data">80</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"> Adaptabilidad </th>
+                                            <td style="--size: 0.7;"> <span class="data">70</span></td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formacion-->
+        <section class="page-section" id="formacion">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">FORMACION</h2>
+                <br><br>
+                <div class="row align-items-center how-it-works d-flex" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">19 - 23</div>
+                    </div>
+                    <div class="col-6">
+                        <h4>Grado en Ingenieria Informatica (CR)</h4>
+                        <h5>Universidad de Castilla - La Mancha</h5>
+                    </div>
+                </div>
+                
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner top-right"></div>
+                        </div>
+                <div class="col-8">
+                    <hr/>
+                </div>
+                <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                </div>
+                </div>
+                
+                <div class="row align-items-center justify-content-end how-it-works d-flex" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1000">
+                    <div class="col-6 text-right">
+                        <h4>Curso de programación web de CS50 con Python y JavaScript</h4>
+                        <h5>Universidad de Harvard</h5>
+                    </div>
+                    <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">2022</div>
+                    </div>
+                </div>
+                
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner right-bottom"></div>
+                    </div>
+                    <div class="col-8">
+                        <hr/>
+                    </div>
+                    <div class="col-2">
+                        <div class="corner top-left"></div>
+                    </div>
+                </div>
+                
+                <div class="row align-items-center how-it-works d-flex" data-aos="fade-right" data-aos-duration="1000" >
+                    <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">2015</div>
+                    </div>
+                    <div class="col-6">
+                        <h4>Certificado de mecanografía</h4>
+                        <h5>Academia AM</h5>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Portfolio-->
+         <section class="page-section" id="portfolio">
+            <div class="container"></div>
+            <h2 class="text-center mt-0">PORTFOLIO</h2>
+            <br><br><br>
+            <div class="row mobilePortfolio"> 
+                <div class="col" data-aos="fade-up" data-aos-duration="1000">
+                    <div>
+                        <hr class="trans--grow hr1">
+                        <button class="portfolioTitulo" type="button" onclick="animacionProtectora();">PROTECTORA DE ANIMALES</button>
+                        <hr class="trans--grow hr1">
+                        <button class="portfolioTitulo" type="button" onclick="animacionBici();" >TIENDA DE BICICLETAS</button>
+                        <hr class="trans--grow hr1">
+                        <button class="portfolioTitulo" type="button" onclick="animacionKoice();">APLICACION WEB KODI</button>
+                        <hr class="trans--grow hr1">
+                        <button class="portfolioTitulo" type="button" onclick="animacionPoke();">IPOKEMON</button>
+                        <hr class="trans--grow hr1">
+                    </div>
+                </div> 
+                <div class="col imagenes align-items-center">
+                    <div class="contentPort" id="PortfolioProtec"> 
+                        <img id="picProtect" src="/assets/img/portfolio/protectora.jpg"/>
+                        <!-- <p class="descrip">Interfaz para la gestion de una protectora de animales. Realizado con Visual Studio Community 2019, XML y C#. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, diam tincidunt commodo, nisi gravida. Risus congue urna arcu in at mi tincidunt nunc feugiat.</p> -->
+                    </div>
+                    <div class="contentPort" id="PortfolioBici">   
+                        <img id="picBici" src="/assets/img/portfolio/bicicletas.png"/>                                            
+                        <!-- <p class="descrip" >Interfaz para la gestion de una protectora de animales. Realizado con Visual Studio Community 2019, XML y C#. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, diam tincidunt commodo, nisi gravida. Risus congue urna arcu in at mi tincidunt nunc feugiat.</p> -->
+                    </div>         
+                    <div class="contentPort" id="PortfolioKodi">     
+                        <img id="picKoice" src="/assets/img/portfolio/Koice.png"/>                      
+                        <!-- <p class="descrip" >Interfaz para la gestion de una protectora de animales. Realizado con Visual Studio Community 2019, XML y C#. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, diam tincidunt commodo, nisi gravida. Risus congue urna arcu in at mi tincidunt nunc feugiat.</p> -->
+                    </div> 
+                    <div class="contentPort" id="PortfolioPoke">  
+                        <img id="picPoke" src="/assets/img/portfolio/IPOkemon.jpg"/>                        
+                        <!-- <p class="descrip">Interfaz para la gestion de una protectora de animales. Realizado con Visual Studio Community 2019, XML y C#. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, diam tincidunt commodo, nisi gravida. Risus congue urna arcu in at mi tincidunt nunc feugiat.</p> -->
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <!--Contacto-->
+        <section class="page-section" id="contacto">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2>CONTACTA CONMIGO</h2>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <h5>Interesad@ en trabajar conmigo? Mandame un mensaje</h5>
+                            <h6>laura.morales8@alu.uclm.es</h6>
+                            <br>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <a class="contactss" href="https://www.linkedin.com">LINKED-IN</a>
+                            <br>
+                            <a class="contactss" href="mailto:laura.morales8@alu.uclm.es">EMAIL</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <a href="https://www.youtube.com/watch?v=J---aiyznGQ">
+                <img src="/assets/icons8-gato-64.png"
+                width="64" height="64">
+             </a>
+        
+        
+            <button onclick="topFunction()" id="myBtn">
+                <img src="/assets/icons8-chevrons-48.png" width="30" height="30">
+            </button>
+        
+        
+
+        <!--Footer-->
+        <footer class="bg-light py-4">
+            <div class="small text-center">
+                Copyright &copy; 2022 - Laura Morales Caro  
+                <br>
+            </div>
+        </footer>
+    </body>
+</html>

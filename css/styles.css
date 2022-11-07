@@ -32,9 +32,18 @@
 	.mobilePortfolio {
 		flex-direction: column;
 	}
+
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
+	.cv {
+		width: calc(5rem + 10vw) !important;
+		height: calc(2.5rem + 2vw) !important;
+		line-height: calc(2rem + 2.5vw) !important;
+		border: 4px solid var(--bs-linen) !important;
+	}
+
+	
 	html {
 		overflow-x: hidden;
 	}
@@ -80,8 +89,14 @@
 
 	#img2 {
 		display: block!important;
+		max-width: 100%;
+		background-position-y: center;
+		background-position-x: initial;
+		height: 160%;
+		opacity:0.9
 	}
 }
+
 
 .background {
 	width: calc((90rem + 30vw));
@@ -152,6 +167,7 @@
 #myBtn {
 	background-color: var(--bs-light-coral);
 	border-radius: 50px;
+	border: none;
 	width: 50px;
 	height: 50px;
 	align-items: center;
@@ -242,6 +258,25 @@ h5 span:hover,span:focus {
 	text-decoration: none;
 }
 
+.cv {
+	border-radius: 50px;
+	margin: 10px;
+	width: max-content;
+	height: calc(1rem + 3vw);
+	background-color: transparent;
+	border: 5px solid var(--bs-linen);
+	font-weight: 700;
+	display: inline-block;
+	text-align: center;
+	line-height: calc(3rem + 30vw);
+	color: var(--bs-linen);
+	text-decoration: none;
+}
+
+.cv:hover{
+	background-color: rgb(86, 98, 103)!important;
+}
+
 .contactss:hover {
 	background-color: var(--bs-light-coral);
 }
@@ -251,6 +286,12 @@ h5 span:hover,span:focus {
 		width: calc(3.5rem + 15vw);
 		height: calc(2rem + 2vw);
 		line-height: calc(.5rem + 3vw);
+	}
+
+	.cv {
+		width: calc(2rem + 10vw);
+		height: calc(1.5rem + 2vw);
+		line-height: calc(.4rem + 2.5vw);
 	}
 }
 

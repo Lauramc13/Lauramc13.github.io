@@ -59,6 +59,16 @@ window.addEventListener('DOMContentLoaded', event => {
     
     });
 
+    // Boton para volver arriba
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+        $('.myBtn').fadeIn('slow');
+      } else{
+        $('.myBtn').fadeOut('slow');
+      }
+    });
+
+
   // Clase para el cursor
   class CircleAndDot {
       constructor() {
@@ -159,20 +169,20 @@ window.addEventListener('DOMContentLoaded', event => {
       }
     
       hover() {
-        this.cursor.style.border = '18px solid #414C50ff'
+        this.cursor.style.border = '18px solid #3C5761'
       }
     
       hoverout() {
-        this.cursor.style.border = '1px solid #FDF5EC'
+        this.cursor.style.border = '1px solid #3C5761'
       }
     
       // Bolita chiquitina
       fade(distance) {
-        this.cursor.style.boxShadow = `0 ${-15 - distance}px 0 -8px #6B7A73ff, 0 0 0 1px #F2F5F8`
+        this.cursor.style.boxShadow = `0 ${-15 - distance}px 0 -8px #94AAB3, 0 0 0 1px white`
         if (!this.fading) {
           this.fading = true
           setTimeout(() => {
-            this.cursor.style.boxShadow = '0 -15px 0 -8px #6B7A7300, 0 0 0 1px #F2F5F8'
+            this.cursor.style.boxShadow = '0 -15px 0 -8px #94AAB3, 0 0 0 1px white'
             this.fading = false
           }, 50)
         }
@@ -244,33 +254,33 @@ window.addEventListener('DOMContentLoaded', event => {
 
 //Animacion portfolio
 
-function animacionProtectora() {
-  document.getElementById('PortfolioProtec').style.display='block';
-  document.getElementById('PortfolioKodi').style.display='none';
-  document.getElementById('PortfolioPoke').style.display='none';
-  document.getElementById('PortfolioBici').style.display='none';
-}
+// function animacionProtectora() {
+//   document.getElementById('PortfolioProtec').style.display='block';
+//   document.getElementById('PortfolioKodi').style.display='none';
+//   document.getElementById('PortfolioPoke').style.display='none';
+//   document.getElementById('PortfolioBici').style.display='none';
+// }
 
-function animacionBici() {
-  document.getElementById('PortfolioBici').style.display='block';
-  document.getElementById('PortfolioKodi').style.display='none';
-  document.getElementById('PortfolioPoke').style.display='none';
-  document.getElementById('PortfolioProtec').style.display='none';
-}
+// function animacionBici() {
+//   document.getElementById('PortfolioBici').style.display='block';
+//   document.getElementById('PortfolioKodi').style.display='none';
+//   document.getElementById('PortfolioPoke').style.display='none';
+//   document.getElementById('PortfolioProtec').style.display='none';
+// }
 
-function animacionKoice() {
-  document.getElementById('PortfolioKodi').style.display='block';
-  document.getElementById('PortfolioPoke').style.display='none';
-  document.getElementById('PortfolioProtec').style.display='none';
-  document.getElementById('PortfolioBici').style.display='none';
-}
+// function animacionKoice() {
+//   document.getElementById('PortfolioKodi').style.display='block';
+//   document.getElementById('PortfolioPoke').style.display='none';
+//   document.getElementById('PortfolioProtec').style.display='none';
+//   document.getElementById('PortfolioBici').style.display='none';
+// }
 
-function animacionPoke() {
-  document.getElementById('PortfolioPoke').style.display='block';
-  document.getElementById('PortfolioKodi').style.display='none';
-  document.getElementById('PortfolioProtec').style.display='none';
-  document.getElementById('PortfolioBici').style.display='none';
-}
+// function animacionPoke() {
+//   document.getElementById('PortfolioPoke').style.display='block';
+//   document.getElementById('PortfolioKodi').style.display='none';
+//   document.getElementById('PortfolioProtec').style.display='none';
+//   document.getElementById('PortfolioBici').style.display='none';
+// }
 
 
 // // Animacion del portfolio
@@ -342,3 +352,6 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+

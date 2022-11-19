@@ -36,11 +36,22 @@
 		top: 1% !important;
 		margin-left: 5% !important;
 	}
-	.dos{
+	#dos{
 		margin-left: 5% !important;
-		color: blue !important;
-		top:calc() !important;
+		transform: translateY(100%);
+		margin-top: 108%;
+	}
+	#tres{
+		margin-left: 5% !important;
+		transform: translateY(100%);
+		margin-top: 87%;
+	}
+	#cuatro{
+		margin-left: 5% !important;
+		transform: translateY(100%);
+		margin-top: 33%;
 	}	
+
 }
 
 @media (max-width:500px) {
@@ -49,35 +60,25 @@
 		overflow-x: hidden;
 	}
 
-
 	.port{
 		margin-left: 10% !important;
 		margin-right: 10% !important;
 
 	}
+	
 
 	#titulo {
 		font-size: calc(1.7rem + 3.8vw)!important;
 		padding-top: calc(9rem + 8vw)!important;
 	}
 
-	#header {
-		margin-left: 5%!important;
+	#titulo, #subtitulo, .cv{
+		margin-left: 5% !important;
 	}
+
 
 	#skills {
 		padding-top: 40px;
-	}
-
-	.background {
-		width: calc((90rem + 30vw));
-		height: max-content;
-		height: auto;
-		left: 0;
-		top: 0;
-		display: block;
-		overflow: hidden;
-		background-position: center;
 	}
 
 	#formacion {
@@ -96,7 +97,9 @@
 
 
 .background {
-	width: calc((90rem + 30vw));
+	max-width: 100% !important;
+	background-position: center;
+	display: contain;
 	height: auto;
 	left: 0;
 	top: 0;
@@ -104,7 +107,9 @@
 	background-position: center;
 	position: absolute;
 	box-sizing: border-box;
+	height: calc(auto + 200px);
 }
+
 
 h4{
 	font-size: calc(1.2rem + 0.8vw);
@@ -115,14 +120,9 @@ h4{
 	#contenedorSobreMi {
 		width: 41.66666667%!important;
 	}
-}
-
-#img1 {
-	display: block;
-}
-
-#img2 {
-	display: none;
+	header {
+		padding-bottom: 1000px !important;
+	}
 }
 
 .portfolioImagen{
@@ -194,9 +194,13 @@ table {
 
 @media (max-width:1000px) {
 	#sobreMi {
-		margin-top: 300px;
+		margin-top: 50px;
 	}
+}
 
+#sobreMi
+{
+	padding-top: 10% !important;
 }
 
 h5 span {
@@ -753,6 +757,10 @@ button {
 	display: none;
 }
 
+nav{
+	position: fixed;
+}
+
 .nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -1221,7 +1229,8 @@ header.masthead {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
-	background-color: transparent;
+	background-image: url("/assets/img/fondo.jpg");
+	padding-bottom: calc(40rem - 4.5rem);
 }
 
 header.masthead .h1,header.masthead h1 {

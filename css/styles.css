@@ -1,34 +1,27 @@
 @charset "UTF-8";
 
 @font-face {
-	font-family:RemboyRegular;src:url(/assets/fonts/RemboyRegular.ttf);
+	font-family:Unna;src:url(/assets/fonts/Unna-Regular.ttf);
 }
 
 @font-face {
-	font-family:AntiqueOliveBold;src:url(/assets/fonts/AQBL.ttf);
+	font-family:UnnaBold;src:url(/assets/fonts/Unna-Bold.ttf);
 }
-
-@font-face {
-	font-family:Centuryy;src:url(/assets/fonts/Century\ Bold.ttf);
-}
-
 
 @font-face {
 	font-family:MontserratLight;src:url(/assets/fonts/Montserrat-Light.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
 	--bs-light-coral: #94AAB3;
 	--bs-light-coral2: #81c2de;
 	--bs-linen: white;
-	--gainsboro: #BEC4C5;
-	--xanadu: #63787F;
-	--ebony: #3C5761;
-	--charcoal: #13242E;
-	--xanadu-2: #3C5761;
+	--xanadu: #3C5761;
 	--bs-body-font-family: 'MontserratLight';
-	--bs-title-font-family: 'Centuryy' ;
+	--bs-title-font-family: 'Unna';
+	--bs-title2-font-family: 'Unna';
 }
 
 *,::after,::before {
@@ -39,6 +32,15 @@
 	.columns {
 		width: 100% !important;
 	}
+	.top-left{
+		top: 1% !important;
+		margin-left: 5% !important;
+	}
+	.dos{
+		margin-left: 5% !important;
+		color: blue !important;
+		top:calc() !important;
+	}	
 }
 
 @media (max-width:500px) {
@@ -47,9 +49,20 @@
 		overflow-x: hidden;
 	}
 
+
+	.port{
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+
+	}
+
 	#titulo {
 		font-size: calc(1.7rem + 3.8vw)!important;
 		padding-top: calc(9rem + 8vw)!important;
+	}
+
+	#header {
+		margin-left: 5%!important;
 	}
 
 	#skills {
@@ -57,13 +70,14 @@
 	}
 
 	.background {
-		width: auto!important;
+		width: calc((90rem + 30vw));
+		height: max-content;
 		height: auto;
 		left: 0;
 		top: 0;
-		position: absolute;
-		box-sizing: border-box;
-		filter: brightness(75%);
+		display: block;
+		overflow: hidden;
+		background-position: center;
 	}
 
 	#formacion {
@@ -78,18 +92,6 @@
 	.mobilePortfolio {
 		flex-direction: column;
 	}
-
-	#img1 {
-		display: none!important;
-	}
-
-	#img2 {
-		display: block!important;
-		max-width: 100%;
-		background-position-y: center;
-		background-position-x: initial;
-		height: 160%;
-	}
 }
 
 
@@ -98,10 +100,10 @@
 	height: auto;
 	left: 0;
 	top: 0;
+	display: block;
 	background-position: center;
 	position: absolute;
 	box-sizing: border-box;
-	filter: brightness(75%);
 }
 
 h4{
@@ -113,7 +115,6 @@ h4{
 	#contenedorSobreMi {
 		width: 41.66666667%!important;
 	}
-
 }
 
 #img1 {
@@ -130,35 +131,32 @@ h4{
 	border-radius: 20px;
 	margin: auto;
 	transition: filter 0.35s ease-in-out;
+	position: relative;
 }
 
 .portfolioImagen:hover{
-	filter: brightness(40%);
+	filter: brightness(70%);
 	transition: filter 0.35s ease-in-out;
 }
 
 .top-left {
 	position: absolute;
 	top: 5%;
-	left: 3%;
 	color: black;
 	font-weight: bold;
 	font-size: calc(1rem + 0.6vw);
-
+	margin-left: 2%;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.top-left {
+.text-block{
 	position: absolute;
 	top: 5%;
 	left: 3%;
+	font-weight: bold;
+	font-size: calc(0.8rem + 0.6vw);
 }
-
-.top-left.dos {
-	position: absolute;
-	top: 5%;
-	left: 30%;
-}
-
 
 .myBtn {
 	position: fixed;
@@ -178,12 +176,12 @@ h4{
 }
 
 .myBtn:hover {
-	background-color: var(--xanadu-2);
+	background-color: var(--xanadu);
 	cursor: pointer;
 }
 
 td {
-	background-color: var(--ebony)!important;
+	background-color: var(--xanadu)!important;
 }
 
 #my-chart.bar {
@@ -243,10 +241,10 @@ h5 span:hover,span:focus {
 }
 
 .contactss {
-	width: calc(50px + 10vw);
+	width: calc(90px + 8vw);
 	margin: 10px;
 	border-radius: 0px;
-	font-size: calc(0.5rem + 1vw);
+	font-size: calc(0.8rem + 0.6vw);
 	background-color: transparent;
 	border: solid var(--bs-linen);
 	color: white;
@@ -262,7 +260,6 @@ h5 span:hover,span:focus {
 }
 
 .cv {
-	border-radius: 0px;
 	font-size: calc(0.8rem + 1vw);
 	width: max-content;
 	background-color: transparent;
@@ -285,20 +282,6 @@ h5 span:hover,span:focus {
 
 .contactss:hover {
 	background-color: rgba(54, 86, 100, 0.75)!important;
-}
-
-@media (min-width:300px) {
-	/* .contactss {
-		width: calc(3.5rem + 15vw);
-		height: calc(2rem + 2vw);
-		line-height: calc(.5rem + 3vw);
-	} */
-
-	/* .cv {
-		width: calc(2rem + 10vw);
-		height: calc(1.5rem + 2vw);
-		line-height: calc(.4rem + 2.5vw);
-	} */
 }
 
 hr {
@@ -332,12 +315,12 @@ hr:not([size]) {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--ebony);
+	background: var(--xanadu);
 	cursor: pointer !important;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #1c2022;
+	background-color: #0c171e;
 }
 
 .portfolioTitulo {
@@ -421,7 +404,7 @@ hr:not([size]) {
 }
 
 #titulo {
-	margin-left: auto;
+	margin-left: 0%;
 	margin-right: auto;
 	font-size: calc(3rem + 4vw);
 	color: var(--bs-linen);
@@ -433,7 +416,6 @@ hr:not([size]) {
 	font-size: var(2rem + 5vw)!important;
 	color: var(--bs-linen);
 	font-family: var(--bs-body-font-family);
-	letter-spacing: .1rem;
 }
 
 .id {
@@ -458,7 +440,7 @@ body {
 	font-size: var(--bs-body-font-size);
 	font-weight: var(--bs-body-font-weight);
 	line-height: var(--bs-body-line-height);
-	background-image: url(/assets/img/nnnoise.png);
+	background-image: url(/assets/img/nnnoise.png); 
 	text-align: var(--bs-body-text-align);
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
@@ -823,6 +805,8 @@ button {
 	white-space: nowrap;
 	color: var(--bs-linen);
 	font-size: calc(.9rem + .7vw);
+	font-family: var(--bs-title2-font-family) !important;
+	font-weight: normal;
 }
 
 .navbar-nav {
@@ -1166,6 +1150,7 @@ html {
 	background-color: transparent;
 	transition: background-color .2s ease;
 	backdrop-filter: blur(5px);
+	position: fixed;
 }
 
 #mainNav .navbar-brand {
@@ -1193,6 +1178,7 @@ html {
 		box-shadow: none;
 		background-color: transparent;
 		backdrop-filter: blur(0);
+		position: fixed;
 	}
 
 	#mainNav .navbar-brand {
@@ -1224,6 +1210,7 @@ html {
     background-color: transparent;
     backdrop-filter: blur(5px);
     box-decoration-break: var(--bs-linen);
+	position: fixed;
   }
 }
 

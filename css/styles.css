@@ -532,6 +532,21 @@ body {
 	font-size: 1.25rem;
 }
 
+
+@media (max-width: 500px){
+	#contacto .h5, #contacto h5 {
+		font-size: 0.9rem;
+		width: 100%;
+	}
+	#contacto .h4, #contacto h4 {
+		font-size: 1rem;
+	}
+}
+
+#contacto .h4, #contacto h4 {
+	font-size: 1.35rem;
+}
+
 .h6,h6 {
 	font-size: 1rem;
 }

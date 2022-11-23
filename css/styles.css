@@ -148,6 +148,7 @@ h4{
 	margin-left: 2%;
 	font-weight: 500;
 	font-family: 'Montserrat', sans-serif;
+	font-display: auto;
 }
 
 .text-block{
@@ -330,6 +331,7 @@ hr:not([size]) {
 .portfolioTitulo {
 	color: var(--bs-linen);
 	font-family: Montserrat,sans-serif;
+	font-display: auto;
 	font-weight: 600;
 	font-size: calc(1.3rem + .5vw);
 	text-align: left;
@@ -413,6 +415,7 @@ hr:not([size]) {
 	font-size: calc(3rem + 4vw);
 	color: var(--bs-linen);
 	font-family: var(--bs-title-font-family);
+	font-display: auto;
 	padding-top: calc(3rem + 8vw);
 }
 
@@ -420,11 +423,13 @@ hr:not([size]) {
 	font-size: var(2rem + 5vw)!important;
 	color: var(--bs-linen);
 	font-family: var(--bs-body-font-family);
+	font-display: auto;
 }
 
 .id {
 	color: #fff;
 	font-family: var(--bs-title-font-family);
+	font-display: auto;
 }
 
 #fotoPerfil {
@@ -441,10 +446,11 @@ footer {
 body {
 	margin: 0;
 	font-family: var(--bs-body-font-family);
+	font-display: auto;
 	font-size: var(--bs-body-font-size);
 	font-weight: var(--bs-body-font-weight);
 	line-height: var(--bs-body-line-height);
-	background-image: url(/assets/img/nnnoise.png); 
+	background-image: url(/assets/img/nnnoise.webp); 
 	text-align: var(--bs-body-text-align);
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
@@ -459,6 +465,7 @@ body {
 	margin-top: 0;
 	margin-bottom: .5rem;
 	font-family: var(--bs-body-font-family);
+	font-display: auto;
 	color: var(--bs-linen);
 	font-weight: 500;
 	line-height: 1.2;
@@ -468,6 +475,7 @@ body {
 	margin-top: 0;
 	margin-bottom: .5rem;
 	font-family: var(--bs-title-font-family);
+	font-display: auto;
 	font-weight: 500;
 	line-height: 1.2;
 }
@@ -476,6 +484,7 @@ body {
 	margin-top: 0;
 	margin-bottom: .5rem;
 	font-family: var(--bs-title-font-family);
+	font-display: auto;
 	color: var(--bs-linen);
 }
 
@@ -569,6 +578,7 @@ button:focus:not(:focus-visible) {
 button {
 	margin: 0;
 	font-family: var(--bs-body-font-family);
+	font-display: auto;
 	font-size: inherit;
 	line-height: inherit;
 }
@@ -814,6 +824,7 @@ nav{
 	color: var(--bs-linen);
 	font-size: calc(.9rem + .7vw);
 	font-family: var(--bs-title2-font-family) !important;
+	font-display: auto;
 	font-weight: normal;
 }
 
@@ -1165,11 +1176,13 @@ html {
 	font-weight: 700;
 	color: var(--bs-linen);
 	font-family: var(--bs-title-font-family);
+	font-display: auto;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
 	color: var(--bs-linen);
 	font-family: var(--bs-body-font-family);
+	font-display: auto;
 	font-weight: 700;
 	font-size: 1.1rem;
 	padding: .75rem 0;
@@ -1192,6 +1205,7 @@ html {
 	#mainNav .navbar-brand {
 		color: var(--bs-linen);
 		font-family: var(--bs-title-font-family);
+		font-display: auto;
 	}
 
 	#mainNav .navbar-brand:hover {
@@ -1229,7 +1243,7 @@ header.masthead {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
-	background-image: url("/assets/img/fondo.jpg");
+	background-image: url("/assets/img/fondo.webp");
 	padding-bottom: calc(40rem - 4.5rem);
 }
 

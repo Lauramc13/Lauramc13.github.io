@@ -5,6 +5,32 @@ $(document).ready(function () {
 window.addEventListener('DOMContentLoaded', event => {
     AOS.init();
 
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+    scrollFunction();
+    };
+
+    function scrollFunction() {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -223,57 +249,6 @@ window.addEventListener('DOMContentLoaded', event => {
             cursor.remove()
         }
     })()
-
-    $(function () {
-        var platform = navigator.platform.toLowerCase();
-        if (platform.indexOf('win') == 0 || platform.indexOf('linux') == 0) {
-            if ($.browser.webkit) {
-                $.srSmoothscroll();
-            }
-        }
-    });
-
-    // // Animacion para los hr
-    // $(window).scroll(function () {
-    //     var wh = $(window).height() - 50;
-    //     if ($(window).scrollTop() > $('.trans--grow').offset().top - wh) {
-    //         setTimeout(function () {
-    //             $('.trans--grow').addClass('grow');
-    //         }, 275);
-    //     }
-    // });
-
-    // var text = document.getElementById('text');
-    // var newDom = '';
-    // var animationDelay = 6;
-
-    // for (let i = 0; i < text.innerText.length; i++) {
-    //     newDom += '<span class="char">' + (
-    //     text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]
-    // ) + '</span>';
-    // }
-
-    // text.innerHTML = newDom;
-    // var length = text.children.length;
-
-    // for (let i = 0; i < length; i++) {
-    //     text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-    // }
-
-    // Cuando el usuario pulsa el boton, scroll al inicio de la pagina
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
 });
-
-// function animationsTest(callback) {
-//     var testAnimationInterval = setInterval(function () {
-//         if (!$.timers.length) {
-//             clearInterval(testAnimationInterval);
-//             callback();
-//         }
-//     }, 25);
-// };
 
 

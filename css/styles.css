@@ -22,6 +22,7 @@
 	--bs-light-coral2: #81c2de;
 	--bs-linen: white;
 	--xanadu: #3C5761;
+	--xanadu-black: #06141e;
 	--bs-body-font-family: 'MontserratLight';
 	--bs-title-font-family: 'Unna';
 	--bs-title2-font-family: 'Unna';
@@ -36,7 +37,6 @@
 #load {
 	position: fixed;
 	z-index: 9999;
-	background: url(/assets/images/loading.gif) no-repeat center center;
 	background-size: 100px 100px;
 	width: 100%;
 	color: white;
@@ -267,7 +267,7 @@ h4 {
 	font-size: calc(0.8rem + 0.6vw);
 }
 
-.myBtn {
+#btn-back-to-top {
 	position: fixed;
 	width: 50px;
 	height: 50px;
@@ -284,7 +284,7 @@ h4 {
 	transition: all 0.4s;
 }
 
-.myBtn:hover {
+#btn-back-to-top:hover {
 	background-color: var(--xanadu);
 	cursor: pointer;
 }
@@ -524,10 +524,8 @@ hr:not([size]) {
 }
 
 #subtitulo {
-	font-size: var(2rem + 5vw) !important;
 	color: var(--bs-linen);
 	font-family: var(--bs-body-font-family);
-	font-display: auto;
 }
 
 .id {
@@ -552,6 +550,7 @@ body {
 	font-family: var(--bs-body-font-family);
 	font-display: auto;
 	font-size: var(--bs-body-font-size);
+	background-color: var(--xanadu-black);
 	font-weight: var(--bs-body-font-weight);
 	line-height: var(--bs-body-line-height);
 	background-image: url(/assets/img/nnnoise.webp);
